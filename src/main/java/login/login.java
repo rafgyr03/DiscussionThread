@@ -33,9 +33,13 @@ public class login extends HttpServlet {
             throws ServletException, IOException {
         boolean username;
         boolean password;
+        boolean username2;
+        boolean password2;
         username = "Marcus".equals(request.getParameter("username"));
         password = "correct".equals(request.getParameter("password"));
-        return (username && password);
+        username2 = "Roy".equals(request.getParameter("username"));
+        password2 = "password".equals(request.getParameter("password"));
+        return (username && password || username2 && password2);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
