@@ -13,6 +13,7 @@
     </head>
     <body>
         <h1>Discussion Thread</h1>
+        <a href="newPost.jsp">Add new post</a>
         ${body}
     </body>
 </html>
